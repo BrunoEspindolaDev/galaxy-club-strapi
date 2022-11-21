@@ -67,6 +67,12 @@
       "type": "string",
       "required": true,
       "default": "(99) 99999999"
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
